@@ -2,6 +2,8 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Import font -->
     <link rel="stylesheet" href="../css/stylesheet.css">
         <!-- Link CSS Stylesheet -->
@@ -12,19 +14,33 @@
 <body>
     <h1 id="heading">Edison Motor Co.</h1>
         <!-- Heading -->
-    <div> <!-- Navigation Bar -->
-        <ul id="navbar">
-            <li><a class="active" href="html/index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="vehicles.html">Vehicles</a></li>
-        </ul>
-    </div>
+        <div class="topnav" id="myTopnav">
+            <a href="html/index.html" class="active">Home</a>
+            <a href="html/about.html">About</a>
+            <a href="html/contact.html">Contact</a>
+            <div class="dropdown">
+              <button class="dropbtn">Vehicles
+                <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="html/vehicles/phono.html">Phono</a>
+                    <a href="html/vehicles/kineto.html">Kineto</a>
+                    <a href="html/vehicles/teleforce.html">Teleforce</a>
+                  </div>
+            </div>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
 </body>
-<footer>
-    <p>By Armaan Vakharia, Adam Buchalter, Rahil Gandhi</p>
-    <p>Contact Us: <a id="email-link" href="mailto:armaan.vakharia@gmail.com">Email</a></p> 
-</footer>
 
 <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+          x.className = "topnav";
+          }
+    }
 </script>
 </html>
