@@ -3,6 +3,19 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 /* Add a black background color to the top navigation */
+.top .logo {
+  max-width: 5%;
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+.top .heading {
+  display: inline;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  position: relative;
+  bottom: 18px;
+  left: 10px;
+}
 .topnav { 
   background-color: #333;
   overflow: hidden;

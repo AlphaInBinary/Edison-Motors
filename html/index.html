@@ -2,6 +2,7 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Import font -->
@@ -12,24 +13,28 @@
 </head>
 
 <body>
-    <h1 id="heading">Edison Motor Co.</h1>
+    <div class="top">
+        <a href="index.html">
+            <img class="logo" src="../resources/logo.png" alt="Edison Logo">
+        </a>
+        <h1 class="heading">Edison Motors</h1>
+    </div>
         <!-- Heading -->
         <div class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Vehicles
+                  <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="under_construction.html">Phono</a>
+                      <a href="under_construction.html">Kineto</a>
+                      <a href="under_construction.html">Teleforce</a>
+                    </div>
+            </div>
             <a href="under_construction.html">About</a>
             <a href="under_construction.html">Contact</a>
-            <div class="dropdown">
-              <button class="dropbtn">Vehicles
-                <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="under_construction.html">Phono</a>
-                    <a href="under_construction.html">Kineto</a>
-                    <a href="under_construction.html">Teleforce</a>
-                  </div>
-            </div>
-                <a href="#about">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
 </body>
 
